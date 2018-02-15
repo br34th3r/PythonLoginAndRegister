@@ -23,10 +23,17 @@ The creation of a user is quite simple and has two options, you can use either o
 
 ```python
   # Option 1
-  person1 = createUser("NAME", "SURNAME", "EMAIL", "PASSWORD)
+  person = createUser("NAME", "SURNAME", "EMAIL", "PASSWORD)
   
   # Option 2
-  person1 = User("NAME", "SURNAME", "EMAIL", "PASSWORD")
+  person = User("NAME", "SURNAME", "EMAIL", "PASSWORD")
+```
+
+Furthermore, the module comes with an in-built entry form to create a user. This can be used in the command line and one can customise the input message for the input and so could be used by administrators to quickly create users. This is done with the following function :
+
+```python
+  # Input New User with a Form
+  person = inputUser("NAME ENTRY PROMPT", "SURNAME ENTRY PROMPT", "EMAIL ENTRY PROMPT", "PASSWORD ENTRY PROMPT")
 ```
 
 ### User Properties
@@ -39,3 +46,27 @@ The User object now has some accessible properties. These are the name, surname,
   person1.email
   person1.password
 ```
+
+### List Users
+There are two options currently to list the current users. One 'safe' way and one 'unsafe' way. These are as follows :
+
+```python
+  # List All Users Without Displaying Passwords (safe)
+  listUsers()
+  
+  # List All Users While Displaying Passwords (unsafe)
+  unsafeList()
+```
+
+The unsafe listing of users will require an admin with access to the terminal to confirm the listing of the users in an 'unsafe' fashion
+
+### User Validation
+#### User Existance
+A user can be checked to see if their object exists using the following function :
+
+```python
+  # Check if a User Exists
+  userExists("EMAIL", "PASSWORD")
+```
+
+This function will return True or False respectively depending on the value.
