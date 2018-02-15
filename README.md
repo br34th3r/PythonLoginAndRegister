@@ -166,3 +166,7 @@ or use pip :
 ```bash
   pip install PythonLoginAndRegister
 ```
+
+## More Info
+[[GitHub Link|https://github.com/coolhobo77/PythonLoginAndRegister/]]
+[[GitHub Pages|https://coolhobo77.github.io/]]
