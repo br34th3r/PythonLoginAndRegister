@@ -8,7 +8,7 @@ Basic Login and Registration System to be Used by New Developers to Structure th
 * Installation
 
 ## Introduction
-_Python Login and Register_ is a module developed by coolhobo77 to provide basic user authentication in Python. It is a very bare-bones structure for the reason that other developers can access the contents of the source files and look around in order to learn how to structure their own modules or projects. Furthermore, the module provides a quick access to check user validation through comparison with another Python variable or direct string value, and a developer can easily use the in-built functions to create a user registration system. Python Login and Register can only be used to regsiter users with the following information:
+_Python Login and Register_ is a module developed to provide basic user authentication in Python. It is a very bare-bones structure for the reason that other developers can access the contents of the source files and look around in order to learn how to structure their own modules or projects. Furthermore, the module provides a quick access to check user validation through comparison with another Python variable or direct string value, and a developer can easily use the in-built functions to create a user registration system. Python Login and Register can only be used to regsiter users with the following information:
 
   * Name
   * Surname
