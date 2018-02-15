@@ -1,0 +1,7 @@
+setup.py
+PythonLoginAndRegister.egg-info/PKG-INFO
+PythonLoginAndRegister.egg-info/SOURCES.txt
+PythonLoginAndRegister.egg-info/dependency_links.txt
+PythonLoginAndRegister.egg-info/not-zip-safe
+PythonLoginAndRegister.egg-info/top_level.txt
+src/LogAndReg.py
