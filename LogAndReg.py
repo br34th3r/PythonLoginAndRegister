@@ -92,7 +92,7 @@ def unsafeList():
             print(user.password)
             return True
     else:
-        return false
+        return False
 
 # Checks all the Users to see if a password and email match is found
 # This will return True if a match is found, and False if not
