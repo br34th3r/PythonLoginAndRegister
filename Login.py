@@ -30,6 +30,18 @@ class User:
         print(self.email)
         print(self.password)
 
+    # Returns the Name of a User
+    def getName(self):
+        return self.name
+
+    # Returns the Surname of a User
+    def getSurname(self):
+        return self.surname
+
+    # Returns the Email of a User
+    def getEmail(self):
+        return self.email
+
     # Returns the Password of a Certain User
     def getPassword(self):
         return self.password
@@ -46,32 +58,60 @@ def inputUser(nameEntry, surnameEntry, emailEntry, passwordEntry):
     surname = str(input(surnameEntry + " : "))
     email = str(input(emailEntry + " : "))
     password = str(input(passwordEntry + " : "))
-    if(validateInputs(name, surname, email, password)):
+    if validateInputs(name, surname, email, password):
         return createUser(name, surname, email, password)
     else:
         return False
 
-
 # Validates the password of a specific user against a preset password
-# This will return true if the password is valid and False if it is not
+# This will return  if the password is valid and False if it is not
 def validateUser(user, password):
-    if(user.password == password):
+    if user.password == password:
         return True
     else:
         return False
 
-#Lists all Users inside the __totalUsers array
+#Lists all Users inside the totalUsers array without displaying passwords
 def listUsers():
     safeUsers = []
     for user in totalUsers:
         safeUsers.append({user.name, user.surname, user.email})
     return safeUsers
 
+# Lists all Users in the totalUsers array while displaying passwords
+def unsafeList():
+    print("This function should only be used by Admins!")
+    print("Make sure there are no other onlookers to this screen or it's output")
+    print("Confirmation is required before displaying this information")
+    conf = str(input("Are you sure you would like to display this information? (y/n)"))
+    if conf == "y":
+        for user in totalUsers:
+            print(user.name)
+            print(user.surname)
+            print(user.email)
+            print(user.password)
+            return True
+    else:
+        return false
+
 # Checks all the Users to see if a password and email match is found
 # This will return True if a match is found, and False if not
 def userExists(email, password):
     for user in totalUsers:
-        if(user.email == email and user.password == password):
+        if user.email == email and user.password == password:
             return True
         else:
             return False
+
+# Removes a user based on their email as a primary key
+# Uses a list comprehension to reassign the totalUsers array with a filter for the email
+def removeUser(email):
+    count = 0
+    indexStore = []
+    while count < len(totalUsers):
+        if(totalUsers[count].email == email):
+            indexStore.append(count)
+        count += 1
+    for index in indexStore:
+        del(totalUsers[index])
+    return True
