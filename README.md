@@ -143,12 +143,12 @@ _Conditionals can be used to create more validation methods, functions are plann
 _Please don't use this code, it's very insecure and any user that sets their password as MIDAS will have admin access!_
 _Demonstration Purposes Only!_
 
-### Remove a User fro the System
+### Remove a User from the System
 
 ```python
   user = createUser("Josh", "Jameson", "joshywashy1@spaceymail.com", "MIDAS")
   
-  if !validateUser(user, "ZEUS"):
+  if validateUser(user, "ZEUS") != True:
       removeUser(user.email)
   else:
       print("Welcome!")
