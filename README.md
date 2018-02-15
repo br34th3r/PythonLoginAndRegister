@@ -168,5 +168,5 @@ or use pip :
 ```
 
 ## More Info
-[[GitHub Link|https://github.com/coolhobo77/PythonLoginAndRegister/]]
-[[GitHub Pages|https://coolhobo77.github.io/]]
+[GitHub Link](https://github.com/coolhobo77/PythonLoginAndRegister/)
+[GitHub Pages](https://coolhobo77.github.io/)
