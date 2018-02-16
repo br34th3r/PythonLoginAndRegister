@@ -168,6 +168,6 @@ or use pip :
 ```
 
 ## More Info
-[Python Login and Register on GitHub](https://github.com/coolhobo77/PythonLoginAndRegister/)
+[Python Login and Register on GitHub](https://github.com/brabantio/PythonLoginAndRegister/)
 
-[Coolhobo77 on GitHub Pages](https://coolhobo77.github.io/)
+[brabantio on GitHub Pages](https://brabantio.github.io/)
