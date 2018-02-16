@@ -170,4 +170,4 @@ or use pip :
 ## More Info
 [Python Login and Register on GitHub](https://github.com/brabantio/PythonLoginAndRegister/)
 
-[brabantio on GitHub Pages](https://brabantio.github.io/)
+[Brabantio on GitHub Pages](https://brabantio.github.io/)
