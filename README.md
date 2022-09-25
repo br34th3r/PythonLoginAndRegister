@@ -170,4 +170,4 @@ or use pip :
 ## More Info
 [Python Login and Register on GitHub](https://github.com/kamohoaliix/PythonLoginAndRegister/)
 
-[Kamohoaliix on GitHub Pages](https://kamohoaliix.github.io/)
+[Br34th3r Website](https://joshboddy.com/)
